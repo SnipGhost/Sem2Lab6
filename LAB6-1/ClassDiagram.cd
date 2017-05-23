@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Deriv1">
+    <Position X="1.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAQAAAAAAABAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>packcage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Deriv2">
+    <Position X="0.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAQAAAAACAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>packcage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Deriv3">
+    <Position X="2.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAQAAAAAEAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>packcage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bas">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAgAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>packcage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Type1">
+    <Position X="4.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAgAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>packcage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Type2">
+    <Position X="6.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAIAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>packcage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abstr">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAgAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>packcage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
