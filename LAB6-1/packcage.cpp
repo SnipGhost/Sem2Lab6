@@ -88,7 +88,8 @@ void test2()
 					p = new Deriv3(i*j);
 					break;
 			}
-			ListDer.AddHead(p);
+			//ListDer.AddHead(p); // В начало (в голову)
+			ListDer.AddTail(p);   // В конец (в хвост)
 		}
 	}
 
@@ -125,5 +126,10 @@ void test2()
 		delete cur_obj;
 		cout << "END!" << endl;
 	}
+
+
+	F obj(1, 2, 3, 4);
+	obj.print();
+
 }
 //-----------------------------------------------------------------------------

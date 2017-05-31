@@ -93,5 +93,47 @@ class Deriv3: public Deriv1
 	 { cout << "Deriv3 = " << iDPar << " Absrt = " << iPar << endl; }
 };
 //-----------------------------------------------------------------------------
+class A // Базовый класс
+{
+ public:
+	int a;
+	A() { a = 0; }
+	A(int _a) { a = _a; }
+};
+class C: virtual public A
+{
+ public:
+	int c;
+	C() { c = 0; }
+	C(int _a, int _b): A(_a) { c = _b; }
+};
+class D: virtual public A
+{
+ public:
+	int d;
+	D() { d = 0; }
+	D(int _a, int _b): A(_a) { d = _b; }
+};
+class F: virtual public C, virtual public D
+{
+ public:
+	int f;
+	F() { f = 0; }
+	F(int _a, int _b, int _c, int _d): C::A(_a), C(_a+1, _b), D(_a+2, _c) { f = _d; }
+	void print() 
+	{
+		cout << "   a = " <<    a << endl;
+		cout << "A::a = " << A::a << endl;
+		cout << "C::a = " << C::a << endl;
+		cout << "D::a = " << D::a << endl;
+		cout << "   c = " <<    c << endl;
+		cout << "C::c = " << C::c << endl;
+		cout << "   d = " <<    d << endl;
+		cout << "D::d = " << D::d << endl;
+		cout << "   f = " <<    f << endl;
+		cout << "F::f = " << F::f << endl; 
+	}
+};
+//-----------------------------------------------------------------------------
 #endif /* PACKCAGE_H */
 //-----------------------------------------------------------------------------
