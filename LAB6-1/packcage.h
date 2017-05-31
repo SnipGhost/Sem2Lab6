@@ -100,26 +100,32 @@ class A // Базовый класс
 	A() { a = 0; }
 	A(int _a) { a = _a; }
 };
-class C: virtual public A
+
+class C: virtual public A // Ответвление 1
 {
  public:
 	int c;
 	C() { c = 0; }
 	C(int _a, int _b): A(_a) { c = _b; }
 };
-class D: virtual public A
+
+class D: virtual public A // Ответвление 2
 {
  public:
 	int d;
 	D() { d = 0; }
 	D(int _a, int _b): A(_a) { d = _b; }
 };
-class F: virtual public C, virtual public D
+
+class F: virtual public C, virtual public D // Сращивает ветки 1 и 2
 {
  public:
 	int f;
 	F() { f = 0; }
-	F(int _a, int _b, int _c, int _d): C::A(_a), C(_a+1, _b), D(_a+2, _c) { f = _d; }
+	F(int _a, int _b, int _c, int _d): C::A(_a), C(_a+1, _b), D(_a+2, _c) 
+	{ 
+		f = _d; 
+	}
 	void print() 
 	{
 		cout << "   a = " <<    a << endl;
